@@ -63,7 +63,7 @@ nav a {
 
 @media all and (max-width: 650px) {
   .banner {
-    margin: 30% auto;
+    margin: 50% auto;
     width: 90%;
   }
 }
