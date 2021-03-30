@@ -113,6 +113,12 @@ footer {
     margin: 0 auto;
 }
 
+@media all and (max-width: 650px) {
+  .footer-center {
+    width: 100%;
+  }
+}
+
 /* Social Media Icons */
 
 .icon-3d {
