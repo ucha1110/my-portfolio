@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -17,47 +17,112 @@ body {
     color: white;
 }
 
-header {
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    width: 1000px;
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
-}
-
-@media all and (max-width: 1500px) {
-  header {
-    width: 100%;
-  }
-}
-
 h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 h2 {
   font-size: 2.5rem;
   margin-bottom: 0.2rem;
   font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 1500px) {
+  h2 {
+    font-size: 2.2rem;
+    margin: 0.9rem 0 -0.1rem 0;
+  }
 }
 
 p {
   font-size: 1.5rem;
 }
 
-nav a {
-    margin-right: 1rem;
-    font-size: 2.2rem;
-    display: inline;
-    color: white;
-    text-decoration: none;
-}
-
 .underline {
     text-decoration: underline;
+}
+
+/* Header */
+
+header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  margin: auto;
+}
+
+nav a {
+  margin-right: 1rem;
+  font-size: 2.2rem;
+  display: inline;
+  color: white;
+  text-decoration: none;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 0.8rem;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:inline-block;}
+
+
+@media all and (max-width: 1500px) {
+  header {
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
 }
 
 /* Banner */
@@ -73,12 +138,12 @@ nav a {
 
 @media all and (max-width: 1500px) {
   .banner {
-    margin: 0 auto;
-    width: 90%;
+    margin: 40% auto;
+    width: 93%;
   }
 }
 
-/* View Portfolio button */
+/* Buttons */
 
 a.button3 {
     display: inline-block;
@@ -90,7 +155,7 @@ a.button3 {
     font-weight: 600;
     font-size: 1.75rem;
     color: #0099cc;
-    background-color: #FFE42B;
+    background-color: rgb(252, 252, 178);
     text-align: center;
     transition: all 0.2s;
     }
@@ -99,8 +164,8 @@ a.button3:hover{
     }
 @media all and (max-width:1500px){
     a.button3 {
-    display: block;
-    margin: 0.2em auto;
+    margin: 0.5em auto;
+    padding: 0.5em 0.8em;
     }
 }
 
@@ -165,7 +230,7 @@ footer {
 .skills-flex-container {
   display: flex;
   flex-wrap: wrap;
-  width: 40%;
+  width: 100%;
   margin-top: -1rem;
 }
 
@@ -180,11 +245,35 @@ footer {
   font-size: 4rem;
 }
 
+@media all and (max-width: 1500px) {
+  .skills-master-container {
+    width: 93%;
+  }
+
+  .skills-flex-container {
+    margin-top: 0rem;
+  }
+
+  .skill {
+    font-size: 3rem;
+  }
+
+  .skill-container {
+    margin-top: 0.5rem;
+  }
+}
+
 /* Latest Proyects */
 
 .project-list-container {
     width: 1000px;
     margin: 0 auto 1% auto;
+}
+
+@media all and (max-width: 1500px) {
+  .project-list-container {
+    width: 93%;
+  }
 }
 
 .latest-proyects-list {
@@ -219,6 +308,13 @@ footer {
   margin: 0 auto;
 }
 
+@media all and (max-width: 1500px) {
+  .project-info {
+    margin: 0 auto;
+    width: 93%;
+  }
+}
+
 /* Get in Touch */
 
 .touch-container {
@@ -233,4 +329,18 @@ footer {
 .details {
   margin-top: 1rem;
   font-size: 1.6rem;
+}
+
+@media all and (max-width: 1500px) {
+  .touch-container {
+    width: 93%;
+  }
+
+  .touch-small-container {
+    width: 100%;
+  }
+
+  .touch-small-container h2 {
+    margin-bottom: 0.2rem;
+  }
 }

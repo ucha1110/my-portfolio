@@ -7,12 +7,13 @@
     <title>About</title>
     <link rel="stylesheet" href="./resources/style.css">
     <script src="https://kit.fontawesome.com/9edfc84d1e.js" crossorigin="anonymous"></script>
+    <script src="./resources/main.js" defer></script>
 </head>
 <body>
 
     <!-- Header -->
 
-    <header>
+    <header class="desktop">
         <nav>
            <a href="./index.html" class="underline">About</a>
            <a href="./resources/portfolio.html">Portfolio</a>
@@ -20,12 +21,23 @@
         </nav>
     </header>
 
+    <header class="mobile">
+        <div class="dropdown">
+            <i class="fas fa-bars dropbtn"></i>
+            <div class="dropdown-content">
+              <a href="./index.html">About</a>
+              <a href="./resources/portfolio.html">Portfolio</a>
+              <a href="/resources/contact.html">Contact</a>
+            </div>
+          </div>
+    </header>
+
     <!-- Banner -->
 
     <div class="banner">
-        <h1>Front-end Developer</h1>
+        <h1>Web Design & Development</h1>
         <div>
-        <p>Hi, I'm Alfonso, I specialize in front-end design and development creating custom websites to help clients ranging from individuals and small-businesses all the way up to large enterprise corporations.</p>
+        <p>I'm Alfonso, I specialize in front-end design and development creating custom websites to help clients ranging from individuals and small-businesses all the way up to large enterprise corporations.</p>
         <a href="./resources/portfolio.html" class="button3">View Portfolio</a>
         </div>
     </div>
