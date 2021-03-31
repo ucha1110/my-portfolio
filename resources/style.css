@@ -24,6 +24,12 @@ h1 {
     text-transform: uppercase;
 }
 
+@media all and (max-width: 1500px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
 h2 {
   font-size: 2.5rem;
   margin-bottom: 0.2rem;
@@ -135,15 +141,53 @@ nav a {
 
 .banner {
   width: 1000px;
-  margin: 18% auto;
+  margin: 15rem auto;
   padding-right: 15%;
 }
 
 @media all and (max-width: 1500px) {
   .banner {
-    margin: 9rem auto;
+    margin: 5rem auto;
     width: 93%;
     padding-right: 0;
+  }
+}
+
+/* Skills */
+
+.skills-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skill-container {
+  display: inline-block;
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  font-size: 4rem;
+}
+
+@media all and (max-width: 1500px) {
+  .skills-master-container {
+    width: 93%;
+    margin-top: 4.5rem;
+  }
+
+  .skills-flex-container {
+    margin-top: 0;
+  }
+
+  .skill {
+    font-size: 3rem;
+  }
+
+  .skill-container {
+    margin-top: 0.5rem;
   }
 }
 
@@ -168,7 +212,7 @@ a.button3:hover{
     }
 @media all and (max-width:1500px){
     a.button3 {
-    margin: 0.5em auto;
+    margin: 0.5em 0;
     padding: 0.5em 0.8em;
     }
 }
@@ -187,11 +231,8 @@ footer {
 }
 
 @media all and (max-width: 1500px) {
-  .footer-portfolio {
-    position: relative;
-  }
   
-  .footer-center {
+.footer-center {
     width: 100%;
   }
 }
@@ -228,65 +269,22 @@ footer {
   }
 }
 
-/* Skills */
-
-.skills-master-container {
-  width: 1000px;
-  margin: 8% auto 1% auto;
-}
-
-.skills-flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: -1rem;
-}
-
-.skill-container {
-  display: inline-block;
-  text-align: center;
-  margin-right: 2rem;
-  margin-top: 1rem;
-}
-
-.skill {
-  font-size: 4rem;
-}
-
-@media all and (max-width: 1500px) {
-  .skills-master-container {
-    width: 93%;
-    margin-top: 4.5rem;
-  }
-
-  .skills-flex-container {
-    margin-top: 0;
-  }
-
-  .skill {
-    font-size: 3rem;
-  }
-
-  .skill-container {
-    margin-top: 0.5rem;
-  }
-}
-
 /* Latest Proyects */
 
 .project-list-container {
     width: 1000px;
-    margin: 0 auto 1% auto;
+    margin: 9.5rem auto 1% auto;
 }
 
 @media all and (max-width: 1500px) {
   .project-list-container {
     width: 93%;
+    margin-top: 6rem;
   }
 }
 
 .latest-proyects-list {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 1.9rem;
 }
 
