@@ -141,7 +141,7 @@ nav a {
 
 .banner {
   width: 1000px;
-  margin: 15rem auto;
+  margin: 13rem auto;
   padding-right: 15%;
 }
 
@@ -273,7 +273,7 @@ footer {
 
 .project-list-container {
     width: 1000px;
-    margin: 9.5rem auto 1% auto;
+    margin: 13rem auto 1% auto;
 }
 
 @media all and (max-width: 1500px) {
@@ -327,7 +327,7 @@ footer {
 
 .touch-container {
   width: 1000px;
-  margin: 8% auto 1% auto;
+  margin: 13rem auto 1% auto;
 }
 .touch-small-container {
   display: inline-block;
