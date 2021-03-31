@@ -49,11 +49,17 @@ p {
 /* Header */
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-center {
   height: 4rem;
   display: flex;
   align-items: center;
   width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 nav a {
@@ -128,8 +134,9 @@ nav a {
 /* Banner */
 
 .banner {
-  width: 530px;
-  margin: 15% auto;
+  width: 1000px;
+  margin: 18% auto;
+  padding-right: 15%;
 }
 
 .banner p {
@@ -138,8 +145,9 @@ nav a {
 
 @media all and (max-width: 1500px) {
   .banner {
-    margin: 40% auto;
+    margin: 13rem auto;
     width: 93%;
+    padding-right: 0;
   }
 }
 
@@ -224,7 +232,7 @@ footer {
 
 .skills-master-container {
   width: 1000px;
-  margin: 4% auto 1% auto;
+  margin: 8% auto 1% auto;
 }
 
 .skills-flex-container {
@@ -248,6 +256,7 @@ footer {
 @media all and (max-width: 1500px) {
   .skills-master-container {
     width: 93%;
+    margin-top: 5.5rem;
   }
 
   .skills-flex-container {
@@ -333,6 +342,7 @@ footer {
 
 @media all and (max-width: 1500px) {
   .touch-container {
+    margin-top: 5.5rem;
     width: 93%;
   }
 
